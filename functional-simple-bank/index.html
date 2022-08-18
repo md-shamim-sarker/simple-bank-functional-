@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="/dist/output.css" rel="stylesheet">
+        <title>Functional Bank</title>
+    </head>
+
+    <body class="w-screen h-screen flex flex-col gap-5 justify-center items-center">
+        <h1 class="text-5xl font-extrabold mb-5">Simple Bank</h1>
+        <div class="w-2/3 h-2/3 border-4 border-blue-300 p-5 flex flex-col gap-5">
+            <div class="w-full h-1/2 flex gap-5">
+                <div class="w-1/3 h-full border-4 flex justify-center items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold">Deposit</h2>
+                        <h2 class="text-3xl font-extrabold">$<span id="deposit">000</span></h2>
+                    </div>
+                </div>
+                <div class="w-1/3 h-full border-4 flex justify-center items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold">Withdraw</h2>
+                        <h2 class="text-3xl font-extrabold">$<span id="withdraw">000</span></h2>
+                    </div>
+                </div>
+                <div class="w-1/3 h-full border-4 flex justify-center items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold">Balance</h2>
+                        <h2 class="text-3xl font-extrabold">$<span id="balance">1250</span></h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full h-1/2 flex gap-5">
+                <div class="w-1/2 h-full border-4 bg-slate-400 flex justify-center items-center">
+                    <div>
+                        <input type="text" id="deposit-field" class="mb-3 text-lg p-1 font-bold"><br>
+                        <button id="deposit-button" type="submit"
+                            class="bg-blue-600 px-5 py-2 font-bold text-blue-100">Deposit</button>
+                    </div>
+                </div>
+                <div class="w-1/2 h-full border-4 bg-slate-400 flex justify-center items-center">
+                    <div>
+                        <input type="text" id="withdraw-field" class="mb-3 text-lg p-1 font-bold"><br>
+                        <button id="withdraw-button" type="submit"
+                            class="bg-blue-600 px-5 py-2 font-bold text-blue-100">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/utilities.js"></script>
+        <script src="/js/deposit.js"></script>
+        <script src="/js/withdraw.js"></script>
+    </body>
+
+</html>
